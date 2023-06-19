@@ -10,9 +10,8 @@ https://mynewbook-search-engine-0abbda5116f3.herokuapp.com/
 
 Results are displayed in charts with same heights
 
-![SearchResults](https://github.com/unbmattzhao/Book-Search-Engine/assets/46049501/1251454a-9bba-4add-90cb-870c27a2903a)
-
-![SavedBooks](https://github.com/unbmattzhao/Book-Search-Engine/assets/46049501/1fb660ee-5c81-40c2-9387-2842b9503250)
+![SearchResults](https://github.com/unbmattzhao/Book-Search-Engine/assets/46049501/1fb660ee-5c81-40c2-9387-2842b9503250)
+![SavedBooks](https://github.com/unbmattzhao/Book-Search-Engine/assets/46049501/1251454a-9bba-4add-90cb-870c27a2903a)
 
 ## Table of Contents
 
@@ -31,7 +30,7 @@ then run `npm run build`
 
 run the App in Development Mode
 
-- Base `NODE_ENV=production npm start`
+- Bash `NODE_ENV=production npm start`
 - cmd `set NODE_ENV=production&&npm start`
 - powershell `($env:NODE_ENV = "production") -and (npm start)`
 
