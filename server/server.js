@@ -32,13 +32,19 @@ const startApolloServer = async (typeDefs, resolvers) => {
   // Serve static files from the React app in production
   if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../client/build")));
-  }
 
-  // Catch-all handler for GET requests
-  app.get("*", (req, res) => {
-    // Send the React app
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
-  });
+    // Catch-all handler for GET requests
+    app.get("*", (req, res) => {
+      // Send the React app
+      res.sendFile(path.join(__dirname, "../client/build/index.html"));
+    });
+  } else {
+    // Catch-all handler for GET requests
+    app.get("*", (req, res) => {
+      // Send the React app
+      res.send("<h3>Please run this app in production mode!</h3>");
+    });
+  }
 
   // Start Express server once the DB connection is open
   db.once("open", () => {
