@@ -14,6 +14,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
+  persistedQueries: false,
 });
 
 // Initiate Express app
